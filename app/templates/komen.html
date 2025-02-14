@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+    
+  {% block title %}
+    Komen - Keselamatan di Internet
+  {% endblock %}
+    
+  {% block content %}
+  <h1>Kesimpulan</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit accusamus totam ratione ut voluptatem fugit, in aperiam eligendi maxime neque pariatur officia delectus veritatis tempore qui repudiandae dolor deserunt?</p>
+  <br/>
+    <h2>Komen: </h2>
+    <form method="POST" class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Nama" name="name">
+        <label for="floatingInput">Nama</label>
+      <br/>
+        <textarea class="form-control" placeholder="Komen" id="floatingTextarea2" style="height: 100px" name="comment"></textarea>
+        <label for="floatingTextarea2">Komen</label>
+      <br/>
+      <input class="btn btn-primary" type="submit" value="Hantar">
+  </form>
+  {% endblock %}
