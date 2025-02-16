@@ -11,7 +11,10 @@ Jinja2==3.1.5
 Mako==1.3.9
 MarkupSafe==3.0.2
 psycopg==3.2.4
+<<<<<<< HEAD
 psycopg2==2.9.10
+=======
+>>>>>>> e7878d1c0f8be86aec0416cc5a092ccc3d658cda
 psycopg2-binary==2.9.10
 PyMySQL==1.1.1
 python-dotenv==1.0.1
