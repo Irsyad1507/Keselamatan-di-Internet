@@ -25,10 +25,13 @@ def p4():
 @app.route("/komen", methods=["GET", "POST"])
 def komen():
     if request.method == "POST":
-        name = request.form.get("name")
-        comment = request.form.get("comment")
-        comments = Komen(name=name, comment=comment)
-        db.session.add(comments)
-        db.session.commit()
-        flash("Komen Dihantar!", "success")
+        try:
+            name = request.form.get("name")
+            comment = request.form.get("comment")
+            comments = Komen(name=name, comment=comment)
+            db.session.add(comments)
+            db.session.commit()
+            flash("Komen Dihantar!", "success")
+        except:
+            flash("Gagal menghantar komen")
     return render_template("komen.html")

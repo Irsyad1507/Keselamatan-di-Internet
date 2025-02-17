@@ -9,12 +9,12 @@
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit accusamus totam ratione ut voluptatem fugit, in aperiam eligendi maxime neque pariatur officia delectus veritatis tempore qui repudiandae dolor deserunt?</p>
   <br/>
     <h2>Komen: </h2>
-    <form method="POST" class="form-floating">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Nama" name="name">
-        <label for="floatingInput">Nama</label>
+    <form method="POST">
+      <label for="floatingInput">Nama</label>
+      <input type="text" class="form-control form-floating" id="floatingInput" placeholder="Nama" name="name" required>
       <br/>
-        <textarea class="form-control" placeholder="Komen" id="floatingTextarea2" style="height: 100px" name="comment"></textarea>
-        <label for="floatingTextarea2">Komen</label>
+      <label for="floatingTextarea2">Komen</label>
+      <textarea class="form-control form-floating" placeholder="Komen" id="floatingTextarea2" style="height: 100px" name="comment" required></textarea>
       <br/>
       <input class="btn btn-primary" type="submit" value="Hantar">
   </form>
